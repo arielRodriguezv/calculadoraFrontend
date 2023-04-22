@@ -14,9 +14,70 @@
     <title>Calculadora</title>
 </head>
 <body>
-
+  <div class="container">
+    <h1 class="text-center">Calculadora</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control"
+                        id="resultado" readonly>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <button type="button" class="btn btn-primary
+                            col"
+                            data-numero="7">7</button>
+                        <button type="button" class="btn btn-primary
+                            col"
+                            data-numero="8">8</button>
+                        <button type="button" class="btn btn-primary
+                            col"
+                            data-numero="9">9</button>
+                        <button type="button" class="btn btn-warning
+                            col" data-accion="suma">+</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn btn-primary
+                            col"
+                            data-numero="4">4</button>
+                        <button type="button" class="btn btn-primary
+                            col"
+                            data-numero="5">5</button>
+                        <button type="button" class="btn btn-primary
+                            col"
+                            data-numero="6">6</button>
+                        <button type="button" class="btn btn-warning
+                            col" data-accion="resta">-</button>
+                    </div>
     
-
+                    <div class="row">
+                      <button type="button" class="btn btn-primary
+                          col"
+                          data-numero="1">1</button>
+                      <button type="button" class="btn btn-primary
+                          col"
+                          data-numero="2">2</button>
+                      <button type="button" class="btn btn-primary
+                          col"
+                          data-numero="3">3</button>
+                      <button type="button" class="btn btn-warning
+                          col" data-accion="multiplica">*</button>
+                  </div>
+                  <div class="row">
+                      <button type="button" class="btn btn-primary col"
+                          data-numero="0">0</button>
+                      <button type="button" class="btn btn-danger col"
+                          data-accion="limpiar">C</button>
+                      <button type="button" class="btn btn-success
+                          col" data-accion="igual">=</button>
+                          <button type="button" class="btn btn-warning
+                          col" data-accion="divide">/</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
 
     <script src="./JS/funciones.js"></script>
     <script
