@@ -20,3 +20,29 @@ $(document).ready(function() {
             }
             actualizarPantalla();
         }
+        
+        else if (accion !== undefined) {
+            switch (accion) {
+                case 'suma':
+                    operacion = '+';
+                    break;
+                case 'resta':
+                    operacion = '-';
+                    break;
+                case 'multiplica':
+                    operacion = '*';
+                    break;
+                case 'divide':
+                    operacion = '/';
+                    break;
+                case 'limpiar':
+                    operacion = '';
+                    numero1 = '';
+                    numero2 = '';
+                    inputResultado.val('');
+                    break;
+                case 'igual':
+                    if (numero1 !== '' && numero2 !== '') {
+                        let resultado = 0;
+                        numero1 = parseFloat(numero1);
+                        numero2 = parseFloat(numero2);
