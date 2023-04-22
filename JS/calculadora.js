@@ -46,3 +46,33 @@ $(document).ready(function() {
                         let resultado = 0;
                         numero1 = parseFloat(numero1);
                         numero2 = parseFloat(numero2);
+
+                        switch (operacion) {
+                            case '+':
+                                resultado = numero1 + numero2;
+                                break;
+                            case '-':
+                                resultado = numero1 - numero2;
+                                break;
+                            case '*':
+                                resultado = numero1 * numero2;
+                                break;
+                            case '/':
+                                if (numero2||numero1 !== 0) {
+                                    resultado = numero1 / numero2;
+                                } else {
+                                    alert('No se puede dividir por cero');
+                                }
+                                break;
+                        }
+  
+                        inputResultado.val(resultado);
+                        operacion = '';
+                        numero1 = resultado.toString();
+                        numero2 = '';
+                    }
+                    break;
+            }
+        }
+    });
+  });
